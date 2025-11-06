@@ -5,16 +5,83 @@ Limpiar la base de datos de las elecciones y luego limpiar las bases de datos de
 # Insertar librerías que vamos a usar
 
 ```{r}
-
+library(tidyverse)
+library(readxl)
+library(janitor)
 ```
 
-# Código para limpiar base 1
+# Código para limpiar base 1: Elecciones
 
 ```{r}
+# Subir bases de datos
+pleb_2022 <- read_excel("input/Resultados-Plebiscito-Constitucional-2022.xlsx")
+pleb_2023 <- read_excel("input/2023_PlebiscitoConstitucional_DatosPlebiscito.xlsx")
 
+# Limpiar las bases partiendo por la del plebiscito del 2022
+pleb_2022 <- clean_names(pleb_2022) |> 
+  select(comuna, opcion, votos_tricel) 
+
+pleb_2022 <- pleb_2022 |> 
+  group_by(comuna, opcion) |>
+  summarise(total_votos = sum(votos_tricel, na.rm = TRUE)) |>
+  ungroup()
+
+pleb_2022 <- pleb_2022 |>
+  pivot_wider(
+    names_from = opcion,
+    values_from = total_votos,
+    values_fill = 0
+  )
+
+pleb_2022 <- clean_names(pleb_2022) |> 
+  select(comuna, apruebo, rechazo, votos_en_blanco, votos_nulos)
+
+pleb_2022 <- pleb_2022 |> 
+  mutate(
+    comuna = str_replace_all(comuna, "LLAILLAY", "LLAY-LLAY"),
+    comuna = str_replace_all(comuna, "PAIGUANO", "PAIHUANO")
+  )
+
+# Limpiar la base del plebiscito del 2023
+
+pleb_2023 <- clean_names(pleb_2023) |> 
+  select(comuna, opciones, votos)
+
+pleb_2023 <- pleb_2023 |>
+  group_by(comuna, opciones) |>
+  summarise(total_votos = sum(votos, na.rm = TRUE)) |>
+  ungroup()
+
+pleb_2023 <- pleb_2023 |>
+  pivot_wider(
+    names_from = opciones,
+    values_from = total_votos,
+    values_fill = 0
+  )
+
+pleb_2023 <- clean_names(pleb_2023)
+
+pleb_2023 <- pleb_2023 |> 
+  mutate(
+    comuna = str_replace_all(comuna, "LLAILLAY", "LLAY-LLAY"),
+    comuna = str_replace_all(comuna, "PAIGUANO", "PAIHUANO")
+  )
+
+# Unir las bases
+
+plebs_final <- full_join(
+  pleb_2022,
+  pleb_2023,
+  by = "comuna",
+  suffix = c("_2022", "_2023")
+)
+
+# Guardar la base final limpia de los plebiscitos
+
+write_csv(plebs_final, "data/plebiscitos_limpio.csv")
 ```
 
-# Código para limpiar base 2: revisar datos electorales
+# Código para limpiar base 2
 
 ```{r}
 
@@ -26,4 +93,3 @@ Limpiar la base de datos de las elecciones y luego limpiar las bases de datos de
 
 ```
 
-# Código para unir las bases de datos
