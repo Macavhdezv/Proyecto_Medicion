@@ -18,8 +18,10 @@ El análisis utiliza fuentes oficiales y confiables, integrando información ele
 
 Resultados-Plebiscito-Constitución-Política 2022
 - % de votos Apruebo / Rechazo
+
 Resultados-Plebiscito-Constitución-Política 2023
 + % de votos A favor / En contra
+
 Censo INE 2024 – Características educativas
 
 # Variables principales:
