@@ -1,0 +1,29 @@
+## Unir las bases de datos
+
+Limpiar la base de datos de las elecciones y luego limpiar las bases de datos de CASEN para saber bien que variables vamos a usar.
+
+# Insertar librerías que vamos a usar
+
+```{r}
+
+```
+
+# Código para limpiar base 1
+
+```{r}
+
+```
+
+# Código para limpiar base 2
+
+```{r}
+
+```
+
+# Código para limpiar base 3
+
+```{r}
+
+```
+
+# Código para unir las bases de datos
