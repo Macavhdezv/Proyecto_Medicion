@@ -175,4 +175,3 @@ alcaldes <- alcaldes |>
 
 write_csv(alcaldes, "data/tendencia.csv")
 ```
-
