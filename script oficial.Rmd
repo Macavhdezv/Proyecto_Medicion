@@ -299,3 +299,38 @@ BASE_FINAL_LISTA <- BASE_FINAL |>
 write_csv(BASE_FINAL_LISTA, "data/base_final_lista.csv")
 ```
 
+# Unas últimas modificaciones antes de hacer las regresiones
+
+```{r}
+df_final <- df_final |>
+  mutate(pleb_2022_bin = ifelse(apruebo > rechazo, 1, 0 ) |> as.factor())
+
+df_final <- df_final |> 
+  mutate(pleb_2023_bin = ifelse(a_favor > en_contra, 1, 0) |> as.factor())
+
+df_final <- df_final |> 
+  mutate(
+    tendencia = case_when(
+      pacto %in% c("Chile Vamos", "Unidos Por La Dignidad") ~ "Derecha",
+      pacto %in% c("Unidad Por El Apruebo", "Frente Amplio", "Chile Digno Verde Y Soberano", "Dignidad Ahora") ~ "Izquierda",
+      pacto == "Independientes" ~ "Independiente",
+      TRUE ~ "Otro"
+    )
+  )
+
+```
+
+# Ahora si regresiones
+
+```{r}
+modelo_2022 <- glm(df_final$pleb_2022_bin ~ df_final$escolaridad_promedio_hombres_18_mas + df_final$escolaridad_promedio_mujeres_18_mas + df_final$tendencia + df_final$porcentaje_de_personas_en_situacion_de_pobreza_por_ingresos_2022,
+                   data = df_final,
+                   family = binomial(link = "logit"))
+```
+
+```{r}
+modelo_2023 <- glm(df_final$pleb_2023_bin ~ df_final$escolaridad_promedio_hombres_18_mas + df_final$escolaridad_promedio_mujeres_18_mas + df_final$tendencia + df_final$porcentaje_de_personas_en_situacion_de_pobreza_por_ingresos_2022,
+                   data = df_final,
+                   family = binomial(link = "logit"))
+```
+
