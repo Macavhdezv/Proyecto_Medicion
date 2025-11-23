@@ -277,10 +277,10 @@ BASE_FINAL <- BASE_FINAL |>
   mutate(
     comuna = case_when(
       comuna == "Paiguano" ~ "Paihuano",
-      comuna == "Llaillay" ~ "Llay Llay",
+      comuna == "Llay-Llay" ~ "Llay Llay",
       comuna == "Marchigue" ~ "Marchihue",
       comuna == "Cabo de Hornos" ~ "Cabo de Hornos(Ex-Navarino)",
-      comuna == "San Pedro de La Paz" ~ "San Pedro de la paz",
+      comuna == "San Pedro de La paz" ~ "San Pedro de la paz",
       comuna == "San Juan de la Costa" ~ "San Juan de La Costa",
       comuna == "O'higgins" ~ "O'Higgins",
       comuna == "Treguaco" ~ "Trehuaco",
@@ -292,9 +292,10 @@ BASE_FINAL <- BASE_FINAL |>
   group_by(comuna) |> 
   summarise(across(everything(), ~ dplyr::first(na.omit(.x))), .groups = "drop")
 
-BASE_FINAL <- BASE_FINAL |>
-  filter(!is.na(comuna))
+BASE_FINAL_LISTA <- BASE_FINAL |>
+  filter(!is.na(comuna)) |>
+  filter(comuna != "Antartica")
 
-write_csv(BASE_FINAL, "data/base_final.csv")
+write_csv(BASE_FINAL_LISTA, "data/base_final_lista.csv")
 ```
 
