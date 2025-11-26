@@ -302,6 +302,8 @@ write_csv(BASE_FINAL_LISTA, "data/base_final_lista.csv")
 # Unas últimas modificaciones antes de hacer las regresiones
 
 ```{r}
+df_final <- read_csv("data/base_final_lista.csv")
+
 df_final <- df_final |>
   mutate(pleb_2022_bin = ifelse(apruebo > rechazo, 1, 0 ) |> as.factor())
 
@@ -317,19 +319,18 @@ df_final <- df_final |>
       TRUE ~ "Otro"
     )
   )
-
 ```
 
 # Ahora si regresiones
 
 ```{r}
-modelo_2022 <- glm(df_final$pleb_2022_bin ~ df_final$escolaridad_promedio_hombres_18_mas + df_final$escolaridad_promedio_mujeres_18_mas + df_final$tendencia + df_final$porcentaje_de_personas_en_situacion_de_pobreza_por_ingresos_2022,
+modelo_2022 <- glm(df_final$pleb_2022_bin ~ df_final$escolaridad_promedio_hombres_18_mas + df_final$escolaridad_promedio_mujeres_18_mas + df_final$tendencia + df_final$numero_de_personas_en_situacion_de_pobreza_por_ingresos + df_final$grupo_edad_unido,
                    data = df_final,
                    family = binomial(link = "logit"))
 ```
 
 ```{r}
-modelo_2023 <- glm(df_final$pleb_2023_bin ~ df_final$escolaridad_promedio_hombres_18_mas + df_final$escolaridad_promedio_mujeres_18_mas + df_final$tendencia + df_final$porcentaje_de_personas_en_situacion_de_pobreza_por_ingresos_2022,
+modelo_2023 <- glm(df_final$pleb_2023_bin ~ df_final$escolaridad_promedio_hombres_18_mas + df_final$escolaridad_promedio_mujeres_18_mas + df_final$tendencia + df_final$porcentaje_de_personas_en_situacion_de_pobreza_por_ingresos_2022 + df_final$grupo_edad_unido,
                    data = df_final,
                    family = binomial(link = "logit"))
 ```
