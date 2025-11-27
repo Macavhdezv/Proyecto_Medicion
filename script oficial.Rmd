@@ -239,7 +239,7 @@ alcaldes$comuna <- gsub("\\bDe\\b", "de", alcaldes$comuna)
 write_csv(alcaldes, "data/tendencia.csv")
 ```
 
-Nivel socioeconómico de la comuna 
+Nivel socioeconómico de la comuna
 
 ```{r}
 
@@ -333,5 +333,43 @@ modelo_2022 <- glm(df_final$pleb_2022_bin ~ df_final$escolaridad_promedio_hombre
 modelo_2023 <- glm(df_final$pleb_2023_bin ~ df_final$escolaridad_promedio_hombres_18_mas + df_final$escolaridad_promedio_mujeres_18_mas + df_final$tendencia + df_final$porcentaje_de_personas_en_situacion_de_pobreza_por_ingresos_2022 + df_final$grupo_edad_unido,
                    data = df_final,
                    family = binomial(link = "logit"))
+```
+
+# Ahora toca graficar: Cargaremos librearías que aún no han sido cargadas
+
+```{r}
+library(tidyverse) 
+library(sf) 
+library(chilemapas)
+library(janitor)
+```
+
+Nos aseguraremos que la variable comuna esté "match" con chilemapas
+
+```{r}
+df_final <- df_final |>
+  mutate(comuna = str_to_upper(stringi::stri_trans_general(comuna, "latin-ascii")))
+```
+
+De esta forma se colocan los nombres en mayúsculas y sin tildes para que el join con el mapa no falle
+
+```{r}
+head(df_final$comuna)
+```
+
+# Preparar mapa desde chilemapas
+
+```{r}
+mapa <- mapa_comunas |> 
+  st_drop_geometry() |> 
+  clean_names()
+
+colnames(mapa_comunas)
+colnames(df_final)
+
+mapa_sf <- mapa_comunas |> 
+  mutate(nombre_comuna = str_to_upper(stringi::stri_trans_general(nombre, "latin-ascii"))) |>
+  left_join(df_final, by = "comuna")
+
 ```
 
