@@ -38,12 +38,26 @@ Tampoco consideramos en el análisis a la Antártica porque no tenían datos de 
 El trabajo con las bases de datos se nos dio de forma muy fácil, solo que al ser tantas, tuvimos que hacer muchas modificaciones para que estén todas iguales. Por ejemplo, tuvimos que cambiarle el nombre de las comunas a casi todas las bases de datos para que conincidieran. También, hubieron bases de datos donde, al momento de limpiarlas, se unificaron variables.  
 
 ## Resultados
-![escolaridad_hombre_apruebo2022](https://github.com/user-attachments/assets/c4a6197f-bfee-424b-8aa7-ffdfa27f5507)
-![escolaridad_mujeres_apruebo2022](https://github.com/user-attachments/assets/6586955a-2392-4835-bbfa-698a74427459)
-![escolaridad_hombre_afavor2023](https://github.com/user-attachments/assets/80cb67a8-757c-471e-b6f5-600ee5c9688d)
-![escolaridad_mujeres_afavor2023](https://github.com/user-attachments/assets/5bf371c6-311d-4e08-b15f-e85b09d7038e)
-![pobreza_apruebo2022](https://github.com/user-attachments/assets/ac80dd18-9254-43b4-b48c-c6ec90eb5a7a)
-![pobreza_afavor2023](https://github.com/user-attachments/assets/89062bd9-5a97-494b-84f7-dad1835b3b01)
+
+<img width="450" height="300" alt="promedio_escolaridad_mujeres_apruebo" src="https://github.com/user-attachments/assets/4448a90f-9604-491e-a797-87a02db1a996" />
+<img width="450" height="300" alt="promedio_escolaridad_mujeres_AFAVOR" src="https://github.com/user-attachments/assets/9357e979-2f6f-4861-82c5-49e20292114f" />
+
+
+<img width="450" height="300" alt="promedio_escolaridad_hombres_apruebo" src="https://github.com/user-attachments/assets/5c2929ec-7ea0-44f1-b8ea-9fd87f4688ca" />
+<img width="450" height="300" alt="promedio_escolaridad_hombre_AFAVOR" src="https://github.com/user-attachments/assets/b88b7e4a-2549-4ef7-90fb-84bbc9915cab" />
+
+
+<img width="319" height="272" alt="Pobreza_AFAVOR" src="https://github.com/user-attachments/assets/73811b88-e4c9-47b7-8ba0-1710d45fe043" />
+<img width="450" height="300" alt="Pobreza_Apruebo" src="https://github.com/user-attachments/assets/379411ae-eebc-49fe-8b61-834d02187876" />
+
+
+<img width="450" height="300" alt="porcentaje_hombre_AFAVOR" src="https://github.com/user-attachments/assets/887eda17-6880-4bb6-93f3-30503fbd9af1" />
+<img width="450" height="300" alt="porcentaje_hombre_apruebo" src="https://github.com/user-attachments/assets/69a2c7b1-79de-41ba-8fca-89b70a06f900" />
+
+
+<img width="450" height="300" alt="porcentaje_mujeres_apruebo" src="https://github.com/user-attachments/assets/a79a562a-c493-4395-ae22-5683ddb11d8e" />
+<img width="450" height="300" alt="Procentaje_mujeres_AFAVOR" src="https://github.com/user-attachments/assets/6e279fec-8bdc-4874-afad-275bb2138731" />
+
 
 Realizamos 2 modelos de regresión:
 
