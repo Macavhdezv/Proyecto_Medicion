@@ -47,12 +47,13 @@ El trabajo con las bases de datos se nos dio de forma muy fácil, solo que al se
 <img width="450" height="300" alt="promedio_escolaridad_hombre_AFAVOR" src="https://github.com/user-attachments/assets/b88b7e4a-2549-4ef7-90fb-84bbc9915cab" />
 
 
-<img width="319" height="272" alt="Pobreza_AFAVOR" src="https://github.com/user-attachments/assets/73811b88-e4c9-47b7-8ba0-1710d45fe043" />
 <img width="450" height="300" alt="Pobreza_Apruebo" src="https://github.com/user-attachments/assets/379411ae-eebc-49fe-8b61-834d02187876" />
+<img width="319" height="272" alt="Pobreza_AFAVOR" src="https://github.com/user-attachments/assets/73811b88-e4c9-47b7-8ba0-1710d45fe043" />
 
 
-<img width="450" height="300" alt="porcentaje_hombre_AFAVOR" src="https://github.com/user-attachments/assets/887eda17-6880-4bb6-93f3-30503fbd9af1" />
+
 <img width="450" height="300" alt="porcentaje_hombre_apruebo" src="https://github.com/user-attachments/assets/69a2c7b1-79de-41ba-8fca-89b70a06f900" />
+<img width="450" height="300" alt="porcentaje_hombre_AFAVOR" src="https://github.com/user-attachments/assets/887eda17-6880-4bb6-93f3-30503fbd9af1" />
 
 
 <img width="450" height="300" alt="porcentaje_mujeres_apruebo" src="https://github.com/user-attachments/assets/a79a562a-c493-4395-ae22-5683ddb11d8e" />
