@@ -335,3 +335,11 @@ modelo_2023 <- glm(df_final$pleb_2023_bin ~ df_final$escolaridad_promedio_hombre
                    family = binomial(link = "logit"))
 ```
 
+# Resumen de los modelos
+
+```{r}
+summary(modelo_2022)
+
+summary(modelo_2023)
+
+```
