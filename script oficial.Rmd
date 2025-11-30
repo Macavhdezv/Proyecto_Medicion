@@ -831,8 +831,6 @@ ggplot(
 ```
 
 
-#
-
-gráficos de RM
+#gr
 
 
