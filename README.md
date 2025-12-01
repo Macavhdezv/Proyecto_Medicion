@@ -58,7 +58,7 @@ Descripción:
 Presenta una relación negativa, la cual muestra que el apoyo a favor disminuye conforme aumenta la escolaridad promedio de las mujeres.
 En relación a los outliers, hay altos niveles de escolaridad promedio pero muy bajo apoyo a favor.
 
-Gráfico 4: Escolaridad promedio de hombres en plebiscito 2023 resultado a favor
+Gráfico 4: Escolaridad promedio de hombres en plebiscito 2023 resultado A favor
 
 Descripción: 
 Presenta una relación negativa, la cual muestra que el apoyo a favor disminuye conforme aumenta la escolaridad promedio de los hombres.
