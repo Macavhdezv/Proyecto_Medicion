@@ -2,7 +2,7 @@
 
 ### Análisis del Nivel Educacional y Resultados Electorales en los Plebiscitos Constitucionales 2022-2023 (Chile)
 
-## Introducción
+# Introducción
 
 El proyecto busca analizar la relación entre el nivel educacional promedio de las comunas chilenas y los resultados electorales obtenidos en los plebiscitos constitucionales de salida de 2022 y 2023, ambos realizados bajo voto obligatorio.
 
@@ -22,22 +22,55 @@ Los plebiscitos constitucionales de 2022 y 2023, ambos con voto obligatorio, ofr
 
 ## Bases de datos y variables
 
-<img width="933" height="523" alt="image" src="https://github.com/user-attachments/assets/03050688-9d3e-4948-8acf-fb60412c9818" />
+Bases de datos que utilizamos:
+1. Resultados-Plebiscito-Constitucional-2022.xlsx: Base de datos del Servel que nos envió la profe --> Variables que tomamos: comuna, opcion y votos_tricel (cantidad de votos x opción)
+2. 2023_PlebiscitoConstitucional_DatosPlebiscito.xlsx: Base de datos del Servel que nos envió la profe --> Variables que tomamos: comuna, opcion y votos_tricel (cantidad de votos x opción)
+3. P7_Educacion_2.xlsx: Base de datos de CASEN --> Variable que obtuvimos: Niveles de educación x comuna
+4. P7_Educacion_4.xlsx: Base de datos de CASEN --> Variable que obtuvimos: Niveles de educación x comuna y sexo
+5. D1_Poblacion-censada-por-sexo-y-edad-en-grupos-quinquenales.xlsx: Base de datos del CENSO 2024 --> Variable que obtuvimos: Grupos de edad unidos --> categorizamos en 20-34, 35-49, 50-64. 65-79 y 80+, cada una con N° (1, 2, 3, 4, 5)
+6. datos_alcalde.xlsx: Base de datos del SERVEL del 2022 --> Variable que obtuvimos: Tendencia política de la comuna (a partir de la coalición del alcalde)
+7. Estimaciones_Tasa_Pobreza_Ingresos_Comunas_2022.xlsx: Base de datos de INE --> Variable que obtuvimos: nivel de pobreza x comuna.
 
-<img width="935" height="523" alt="image" src="https://github.com/user-attachments/assets/89a987b4-8165-4a6b-8f20-be26ac6ffa64" />
+Sacamos la variable de "Zona" porque habían categorías con muy pocos casos, haciendo que la estimación sea inestable.
 
-<img width="931" height="524" alt="image" src="https://github.com/user-attachments/assets/844bd823-d138-484d-a724-aaa36d39e08f" />
+Tampoco consideramos en el análisis a la Antártica porque no tenían datos de muchas de nuestras variables. 
 
-## Plan de Análisis
+El trabajo con las bases de datos se nos dio de forma muy fácil, solo que al ser tantas, tuvimos que hacer muchas modificaciones para que estén todas iguales. Por ejemplo, tuvimos que cambiarle el nombre de las comunas a casi todas las bases de datos para que conincidieran. También, hubieron bases de datos donde, al momento de limpiarlas, se unificaron variables.  
 
-Se realizarán dos modelos para cada proceso constituyente, usando modelos de regresión logística:
+## Resultados
 
-Para el Plebiscito 2022:
+Gráfico 1: Escolaridad promedio de mujeres en plebiscito 2022 resultado Apruebo 
 
-logit(Pleb_2022(Y=1))=β0​+β1​(educación)+β2​(sexo)+β3​(edad)+β4​(tendencia)+β5(zona)+β
+Descripción:
+Presenta una tendencia positiva, en la cual las comunas con mayor porcentaje de escolaridad femenina tienden a mostrar un mayor porcentaje de votos por el apruebo. Además se hay  una dispersión moderada, por lo que la escolaridad influye, pero no explica el resultado. En relación a los outliers, existe una alta escolaridad promedio femeninaa, pero se presenta un bajo apoyo al apruebo.
 
-Para el Plebiscito 2023:
+Gráfico 2:  Escolaridad promedio de hombres en plebiscito 2022 resultado Apruebo 
 
-logit(Pleb_2023(Y=1))=β0​+β1​(educación)+β2​(sexo)+β3​(edad)+β4​(tendencia)+β5(zona)+β
+Descripción:
 
-Así buscamos saber como el nivel educacional en promedio tiene algún efecto significativo en la posibilidad de que una comuna haya votado "Apruebo" en el 2022 o "A Favor" en el 2023
+Presenta una tendencia positiva, en la cual las comunas con mayor porcentaje de escolaridad masculina tienden a mostrar un mayor porcentaje de votos por el apruebo.  En relación a los outliers, el efecto del nivel educacional sobre el voto se desvanece o invierte.
+
+Gráfico 3: Escolaridad promedio de mujeres en plebiscito 2023 resultado A favor
+
+Descripción:
+Presenta una relación negativa, la cual muestra que el apoyo a favor disminuye conforme aumenta la escolaridad promedio de las mujeres. En relación a los outliers, hay altos niveles de escolaridad promedio pero muy bajo apoyo a favor.
+
+Gráfico 4: Escolaridad promedio de hombres en plebiscito 2023 resultado A favor
+
+Descripción: 
+Presenta una relación negativa, la cual muestra que el apoyo a favor disminuye conforme aumenta la escolaridad promedio de los hombres. En relación a los outliers, refuerzan la tendencia negativa, a diferencia de lo ocurrido en 2022, donde tendían a invertirla para el Apruebo.
+
+Gráfico 5: Porcentaje de pobreza comunal y apoyo al Apruebo 2022
+
+Descripción:
+
+Presenta una tendencia negativa, en la cual las comunas con mayor porcentaje de pobreza tienden a mostrar un menor porcentaje de votos por el Apruebo. Además, se observa una dispersión moderada, por lo que el nivel de pobreza influye, pero no explica por sí solo el resultado. En relación a los outliers, existe un porcentaje de pobreza casi nulo, pero se presenta un apoyo al Apruebo extremadamente bajo, rompiendo con el inicio de la línea de tendencia que sugería un apoyo mayor en sectores de menor pobreza.
+
+Gráfico 6: Porcentaje de pobreza comunal y apoyo al A favor 2023
+
+Descripción:
+
+Presenta una tendencia positiva, en la cual las comunas con mayor porcentaje de pobreza tienden a mostrar un mayor porcentaje de votos por la opción A favor. Además, se observa una dispersión moderada, por lo que el nivel de pobreza influye, pero no explica totalmente el resultado. En relación a los Outliers, existe un porcentaje de pobreza mínimo, pero se presenta un apoyo al "A favor" excepcionalmente alto, comportándose de manera opuesta a lo que la tendencia general predice para los sectores de baja pobreza
+
+
+
