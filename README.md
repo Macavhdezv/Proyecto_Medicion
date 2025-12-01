@@ -42,14 +42,14 @@ El trabajo con las bases de datos se nos dio de forma muy fácil, solo que al se
 Gráfico 1: Escolaridad promedio de mujeres en plebiscito 2022 resultado Apruebo 
 
 Descripción:
-Presenta una tendencia positica, en la cual las comunas con mayor porcentaje de escolaridad femenina tienden a mostrar un mayor porcentaje de votos por el apruebo. Además se hay  una dispersión moderada, por lo que la escolaridad influye, pero no explica el resultado.
+Presenta una tendencia positiva, en la cual las comunas con mayor porcentaje de escolaridad femenina tienden a mostrar un mayor porcentaje de votos por el apruebo. Además se hay  una dispersión moderada, por lo que la escolaridad influye, pero no explica el resultado.
 En relación a los outliers, existe una alta escolaridad promedio femeninaa, pero se presenta un bajo apoyo al apruebo.
 
 Gráfico 2:  Escolaridad promedio de hombres en plebiscito 2022 resultado Apruebo 
 
 Descripción:
 
-Presenta una tendencia positica, en la cual las comunas con mayor porcentaje de escolaridad masculina tienden a mostrar un mayor porcentaje de votos por el apruebo. 
+Presenta una tendencia positiva, en la cual las comunas con mayor porcentaje de escolaridad masculina tienden a mostrar un mayor porcentaje de votos por el apruebo. 
 En relación a los outliers, el efecto del nivel educacional sobre el voto se desvanece o invierte.
 
 Gráfico 3: Escolaridad promedio de mujeres en plebiscito 2023 resultado A favor
