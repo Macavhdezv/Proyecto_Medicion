@@ -1,0 +1,6 @@
+---
+title: "Script limpieza"
+output: html_document
+date: "2025-12-01"
+---
+
