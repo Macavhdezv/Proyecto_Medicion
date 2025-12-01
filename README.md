@@ -26,7 +26,7 @@ Los plebiscitos constitucionales de 2022 y 2023, ambos con voto obligatorio, ofr
 1. Resultados-Plebiscito-Constitucional-2022.xlsx: Base de datos del Servel que nos envió la profe --> Variables que tomamos: comuna, opcion y votos_tricel (cantidad de votos x opción)
 2. 2023_PlebiscitoConstitucional_DatosPlebiscito.xlsx: Base de datos del Servel que nos envió la profe --> Variables que tomamos: comuna, opcion y votos_tricel (cantidad de votos x opción)
 
-### Variables de control: Nivel educacional
+#### Variables de Independiente: Nivel educacional
 
 1. P7_Educacion_2.xlsx: Base de datos de CASEN --> Variable que obtuvimos: Niveles de educación x comuna
 2. P7_Educacion_4.xlsx: Base de datos de CASEN --> Variable que obtuvimos: Niveles de educación x comuna y sexo
