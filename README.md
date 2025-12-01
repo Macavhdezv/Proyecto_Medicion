@@ -41,41 +41,6 @@ El trabajo con las bases de datos se nos dio de forma muy fácil, solo que al se
 ### Resultados
 A continuación, se presenta una descripción de los gráficos exploratorios realizados para esta investigación.
 
-*Gráfico 1: Escolaridad promedio de mujeres en plebiscito 2022 resultado Apruebo* 
-
-Descripción:
-Presenta una tendencia positiva, en la cual las comunas con mayor porcentaje de escolaridad femenina tienden a mostrar un mayor porcentaje de votos por el apruebo. Además se hay  una dispersión moderada, por lo que la escolaridad influye, pero no explica el resultado. En relación a los outliers, existe una alta escolaridad promedio femeninaa, pero se presenta un bajo apoyo al apruebo.
-
-Gráfico 2:  Escolaridad promedio de hombres en plebiscito 2022 resultado Apruebo 
-
-Descripción:
-
-Presenta una tendencia positiva, en la cual las comunas con mayor porcentaje de escolaridad masculina tienden a mostrar un mayor porcentaje de votos por el apruebo.  En relación a los outliers, el efecto del nivel educacional sobre el voto se desvanece o invierte.
-
-Gráfico 3: Escolaridad promedio de mujeres en plebiscito 2023 resultado A favor
-
-Descripción:
-Presenta una relación negativa, la cual muestra que el apoyo a favor disminuye conforme aumenta la escolaridad promedio de las mujeres. En relación a los outliers, hay altos niveles de escolaridad promedio pero muy bajo apoyo a favor.
-
-Gráfico 4: Escolaridad promedio de hombres en plebiscito 2023 resultado A favor
-
-Descripción: 
-Presenta una relación negativa, la cual muestra que el apoyo a favor disminuye conforme aumenta la escolaridad promedio de los hombres. En relación a los outliers, refuerzan la tendencia negativa, a diferencia de lo ocurrido en 2022, donde tendían a invertirla para el Apruebo.
-
-Gráfico 5: Porcentaje de pobreza comunal y apoyo al Apruebo 2022
-
-Descripción:
-
-Presenta una tendencia negativa, en la cual las comunas con mayor porcentaje de pobreza tienden a mostrar un menor porcentaje de votos por el Apruebo. Además, se observa una dispersión moderada, por lo que el nivel de pobreza influye, pero no explica por sí solo el resultado. En relación a los outliers, existe un porcentaje de pobreza casi nulo, pero se presenta un apoyo al Apruebo extremadamente bajo, rompiendo con el inicio de la línea de tendencia que sugería un apoyo mayor en sectores de menor pobreza.
-
-Gráfico 6: Porcentaje de pobreza comunal y apoyo al A favor 2023
-
-Descripción:
-
-Presenta una tendencia positiva, en la cual las comunas con mayor porcentaje de pobreza tienden a mostrar un mayor porcentaje de votos por la opción A favor. Además, se observa una dispersión moderada, por lo que el nivel de pobreza influye, pero no explica totalmente el resultado. En relación a los Outliers, existe un porcentaje de pobreza mínimo, pero se presenta un apoyo al "A favor" excepcionalmente alto, comportándose de manera opuesta a lo que la tendencia general predice para los sectores de baja pobreza
-
-
-=======
 Gráfico 1: Escolaridad promedio de mujeres y apoyo a Apruebo 2022
 
 Descripción:
