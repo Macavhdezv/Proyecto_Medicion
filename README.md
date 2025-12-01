@@ -126,3 +126,23 @@ Gráfico 16: Distribución del apoyo A Favor 2023 con Rango Etario
 Descripción: 
 
 Presenta una tendencia generacional inversa a la del proceso 2022, en la cual las comunas con población joven (20-34 años) tienden a concentrarse masivamente en un apoyo "Muy Bajo" a la opción "A favor". Por el contrario, el segmento de mayor edad (50-64 años) muestra una tendencia ascendente, inclinándose mayoritariamente hacia un apoyo "Alto". Además, el grupo intermedio (35-49 años) mantiene una participación más baja y dispersa sin una inclinación tan determinante. En relación a los extremos, hay 56 municipios jóvenes rechazaron la propuesta (nivel Muy Bajo), mientras que 59 municipios de mayor edad la apoyaron fuertemente (nivel Alto).
+
+Mapa 1: Educación Superior
+Porcentaje de personas con educación superior por comuna 
+
+Descripción: 
+
+El mapa presenta una marcada concentración en el sector oriente, donde se observan las comunas con los niveles más altos en porcentajes de personas con educación superior, mientras que las zonas centrales y del sur presentan valores intermedios. En contraste, las comunas periféricas y con mayor carácter rural exhiben los porcentajes más bajos. Este patrón refleja las desigualdades territoriales tradicionales de la región, donde el acceso y la culminación de estudios superiores se asocian fuertemente con las diferencias socioeconómicas entre comunas.
+
+Mapa 2:  Mapa a Favor en plebiscito de 2023
+
+Descripción: 
+
+El mapa presenta que el apoyo al “A favor” en el plebiscito de 2023 se concentró principalmente en comunas del sector oriente de la Región Metropolitana, donde los tonos más oscuros indican porcentajes más altos de voto favorable. En contraste, la mayor parte del territorio regional presenta valores intermedios o bajos, especialmente en comunas periféricas y del sur y poniente, donde el apoyo fue considerablemente menor. En conjunto, la distribución refleja una fuerte segmentación territorial del voto, con mayor adhesión en zonas de mayor nivel socioeconómico y menor respaldo en áreas urbanas populares y rurales.
+
+Mapa 3: Mapa apoyo al Apruebo en el plebiscito de 2022
+
+Descripción: 
+
+El mapa presenta que el apoyo al Apruebo en el plebiscito de 2022 se concentró especialmente en comunas del centro y sur de la Región Metropolitana, donde predominan los tonos más oscuros, mientras que las comunas del sector oriente exhibieron los porcentajes más bajos de respaldo, reflejados en colores más claros; esta distribución evidencia un patrón territorial en el que las zonas populares y periféricas manifestaron mayor apoyo al Apruebo, en contraste con las comunas de mayores ingresos, donde la opción obtuvo menor votación.
+
