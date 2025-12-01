@@ -204,82 +204,9 @@ Se utilizaron modelos de Regresión Lineal Múltiple y Regresión Logística, co
 
 Los resultados de los modelos se resumen en las siguientes tablas:
 
-Análisis Lineal de Votos en 2022 y 2023
-=================================================================
-                                      Dependent variable:        
-                               ----------------------------------
-                               porc_apruebo_2022 porc_afavor_2023
-                                Plebiscito 2022  Plebiscito 2023 
-                                      (1)              (2)       
------------------------------------------------------------------
-% Educación Superior               -0.365**          0.728***    
-                                    (0.125)          (0.123)     
-                                                                 
-% Mujeres                           -0.001            0.0004     
-                                    (0.002)          (0.002)     
-                                                                 
-Escolaridad Promedio Mujeres        0.036**         -0.043***    
-                                    (0.011)          (0.011)     
-                                                                 
-Pobreza por Ingresos               -0.843***         0.886***    
-                                    (0.138)          (0.135)     
-                                                                 
-Tendencia: Independientes          0.033***          -0.031**    
-                                    (0.010)          (0.010)     
-                                                                 
-Tendencia: Izquierda                0.024**         -0.034***    
-                                    (0.009)          (0.009)     
-                                                                 
-Edad: 35-49                        0.041***         -0.043***    
-                                    (0.010)          (0.010)     
-                                                                 
-Edad: 50-64                          0.013            -0.021     
-                                    (0.012)          (0.012)     
-                                                                 
-Constante                            0.109           0.728***    
-                                    (0.138)          (0.135)     
-                                                                 
------------------------------------------------------------------
-Observations                          345              345       
-R2                                   0.432            0.377      
-Adjusted R2                          0.418            0.362      
-Residual Std. Error (df = 336)       0.072            0.071      
-F Statistic (df = 8; 336)          31.890***        25.389***    
-=================================================================
-Note:                               *p<0.05; **p<0.01; ***p<0.001
+<img width="532" height="855" alt="image" src="https://github.com/user-attachments/assets/a35d5b7a-3ee4-4cf8-8e4a-0cd72658d577" />
 
-Análisis Logístico del Voto 2022 y 2023
-============================================================
-                                   Dependent variable:      
-                             -------------------------------
-                              pleb_2022_bin   pleb_2023_bin 
-                             Plebiscito 2022 Plebiscito 2023
-                                   (1)             (2)      
-------------------------------------------------------------
-% Educación Superior             -15.317        14.445**    
-                                (13.955)         (4.840)    
-% Mujeres                        -0.134           0.068     
-                                 (0.198)         (0.074)    
-Escolaridad Promedio Mujeres      1.645          -0.988*    
-                                 (1.462)         (0.439)    
-Población Comunal                -39.957        22.698***   
-                                (22.581)         (5.089)    
-Pobreza por Ingresos              0.481          -0.790*    
-                                 (1.031)         (0.337)    
-Tendencia: Independiente          0.773         -0.834**    
-                                 (1.038)         (0.309)    
-Tendencia: Izquierda             18.449         -0.906**    
-                               (1,777.255)       (0.346)    
-Edad: 35-49                      18.478          -0.598     
-                               (1,777.255)       (0.392)    
-Edad: 50-64                      -28.463          2.487     
-                               (1,777.369)       (5.257)    
-------------------------------------------------------------
-Observations                       345             345      
-Log Likelihood                   -27.634        -175.479    
-Akaike Inf. Crit.                73.268          368.958    
-============================================================
-Note:                          *p<0.05; **p<0.01; ***p<0.001
+<img width="535" height="824" alt="image" src="https://github.com/user-attachments/assets/bb022d28-f382-4bc7-91d7-328e20a24f4a" />
 
 # Respuesta a nuestra pregunta de investigación:
 
