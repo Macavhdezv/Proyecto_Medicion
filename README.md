@@ -1,14 +1,9 @@
 #### Proyecto Medición
 
 # Análisis del Nivel Educacional y Resultados Electorales en los Plebiscitos Constitucionales 2022-2023 (Chile)
-<img width="1960" height="1470" alt="image" src="https://github.com/user-attachments/assets/c11ccb66-f2ce-41d8-bff5-ad07e0a60ed2" />
+<img width="1280" height="490" alt="image" src="https://github.com/user-attachments/assets/fc561337-0058-4c13-ac3e-605064a9c1c7" />
 
-<<<<<<< HEAD
-# Introducción
-=======
 ### Introducción
->>>>>>> a0c357778c16d85e3d0aed36fcb2055d035a76c6
-
 El proyecto busca analizar la relación entre el nivel educacional promedio de las comunas chilenas y los resultados electorales obtenidos en los plebiscitos constitucionales de salida de 2022 y 2023, ambos realizados bajo voto obligatorio.
 
 El objetivo es observar cómo factores socioeducativos influyen en la orientación del voto en procesos políticos de alta relevancia.
@@ -43,9 +38,10 @@ Tampoco consideramos en el análisis a la Antártica porque no tenían datos de 
 <<<<<<< HEAD
 El trabajo con las bases de datos se nos dio de forma muy fácil, solo que al ser tantas, tuvimos que hacer muchas modificaciones para que estén todas iguales. Por ejemplo, tuvimos que cambiarle el nombre de las comunas a casi todas las bases de datos para que conincidieran. También, hubieron bases de datos donde, al momento de limpiarlas, se unificaron variables.  
 
-## Resultados
+### Resultados
+A continuación, se presenta una descripción de los gráficos exploratorios realizados para esta investigación.
 
-Gráfico 1: Escolaridad promedio de mujeres en plebiscito 2022 resultado Apruebo 
+*Gráfico 1: Escolaridad promedio de mujeres en plebiscito 2022 resultado Apruebo* 
 
 Descripción:
 Presenta una tendencia positiva, en la cual las comunas con mayor porcentaje de escolaridad femenina tienden a mostrar un mayor porcentaje de votos por el apruebo. Además se hay  una dispersión moderada, por lo que la escolaridad influye, pero no explica el resultado. En relación a los outliers, existe una alta escolaridad promedio femeninaa, pero se presenta un bajo apoyo al apruebo.
