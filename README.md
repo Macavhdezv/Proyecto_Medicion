@@ -1,18 +1,19 @@
 #### Proyecto Medición
 
-### Análisis del Nivel Educacional y Resultados Electorales en los Plebiscitos Constitucionales 2022-2023 (Chile)
+# Análisis del Nivel Educacional y Resultados Electorales en los Plebiscitos Constitucionales 2022-2023 (Chile)
+<img width="1960" height="1470" alt="image" src="https://github.com/user-attachments/assets/c11ccb66-f2ce-41d8-bff5-ad07e0a60ed2" />
 
-## Introducción
+### Introducción
 
 El proyecto busca analizar la relación entre el nivel educacional promedio de las comunas chilenas y los resultados electorales obtenidos en los plebiscitos constitucionales de salida de 2022 y 2023, ambos realizados bajo voto obligatorio.
 
 El objetivo es observar cómo factores socioeducativos influyen en la orientación del voto en procesos políticos de alta relevancia.
 
-# Pregunta de investigación
+### Pregunta de investigación
 
 ¿Cómo se relaciona el nivel educacional de las comunas en Chile con el resultado positivo de los Plebiscitos de Salida de los procesos constituyentes 2022 y 2023?
 
-# Marco Teórico
+### Marco Teórico
 El proyecto analiza cómo las variables socioeconómicas, especialmente la educación, influyen en el comportamiento electoral en Chile.
 Investigaciones clásicas ya destacaban que la educación es uno de los principales factores que explican la participación política. En América Latina, también se ha observado que el lugar de residencia y el nivel de ingresos afectan el voto: las zonas urbanas suelen participar menos, y dentro de ellas, los sectores más acomodados votan más que los de menores ingresos.
 
@@ -20,7 +21,7 @@ En Chile, la reforma electoral de 2012 marcó un fuerte descenso en la participa
 
 Los plebiscitos constitucionales de 2022 y 2023, ambos con voto obligatorio, ofrecen una oportunidad para observar cambios en este comportamiento. Estos procesos movilizaron a nuevos votantes —particularmente personas con menor nivel educacional—, permitiendo comparar cómo un electorado similar reaccionó de manera distinta en dos eventos consecutivos.
 
-## Bases de datos y variables
+### Bases de datos y variables
 
 <img width="933" height="523" alt="image" src="https://github.com/user-attachments/assets/03050688-9d3e-4948-8acf-fb60412c9818" />
 
