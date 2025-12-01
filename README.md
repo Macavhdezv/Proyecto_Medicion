@@ -115,3 +115,14 @@ Descripción:
 
 Presenta una tendencia negativa leve, en la cual las comunas con mayor porcentaje de población con educación superior tienden a mostrar una disminución en el porcentaje de votos por la opción A favor. Además, se observa una dispersión considerable en los tramos medios, por lo que el nivel educativo influye parcialmente, pero no explica por sí solo el resultado. En relación a los Outliers, existe un porcentaje de educación superior extremadamente alto, pero se presenta un apoyo al A favor muy elevado, rompiendo completamente con la tendencia decreciente que rige para el resto de las comunas.
 
+Gráfico 15: Distribución del apoyo al Apruebo 2022 con Rango Etario
+
+Descripción:
+
+Presenta una marcada brecha generacional, en la cual los municipios asociados al rango etario joven (20-34 años) tienden a concentrarse mayoritariamente en un apoyo "Alto" al Apruebo. Por el contrario, el segmento de mayor edad (50-64 años) muestra una tendencia inversa, inclinándose masivamente hacia un apoyo "Muy Bajo". Además, el grupo intermedio (35-49 años) presenta una distribución más dispersa y centrada en los niveles medios, actuando como una transición entre ambos polos demográficos. En relación a los extremos, el grupo joven posiciona a 60 municipios en el cuartil de mayor apoyo, el grupo de 50-64 años ubica a 59 municipios en el nivel de apoyo más bajo.
+
+Gráfico 16: Distribución del apoyo A Favor 2023 con Rango Etario
+
+Descripción: 
+
+Presenta una tendencia generacional inversa a la del proceso 2022, en la cual las comunas con población joven (20-34 años) tienden a concentrarse masivamente en un apoyo "Muy Bajo" a la opción "A favor". Por el contrario, el segmento de mayor edad (50-64 años) muestra una tendencia ascendente, inclinándose mayoritariamente hacia un apoyo "Alto". Además, el grupo intermedio (35-49 años) mantiene una participación más baja y dispersa sin una inclinación tan determinante. En relación a los extremos, hay 56 municipios jóvenes rechazaron la propuesta (nivel Muy Bajo), mientras que 59 municipios de mayor edad la apoyaron fuertemente (nivel Alto).
