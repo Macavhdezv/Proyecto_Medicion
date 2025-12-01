@@ -28,16 +28,90 @@ Los plebiscitos constitucionales de 2022 y 2023, ambos con voto obligatorio, ofr
 
 <img width="931" height="524" alt="image" src="https://github.com/user-attachments/assets/844bd823-d138-484d-a724-aaa36d39e08f" />
 
-## Plan de Análisis
+Gráfico1: Escolaridad promedio de mujeres y apoyo a Apruebo 2022
 
-Se realizarán dos modelos para cada proceso constituyente, usando modelos de regresión logística:
+Descripción:
 
-Para el Plebiscito 2022:
+Presenta una tendencia positiva, en la cual las comunas con mayor escolaridad promedio de mujeres tienden a mostrar un mayor porcentaje de votos por el Apruebo. Además, se observa una dispersión moderada, por lo que la escolaridad influye significativamente, pero no explica por sí sola la totalidad del resultado. En relación a los Outliers, existe una escolaridad promedio femenina muy alta, pero se presenta un apoyo al Apruebo extremadamente bajo.
 
-logit(Pleb_2022(Y=1))=β0​+β1​(educación)+β2​(sexo)+β3​(edad)+β4​(tendencia)+β5(zona)+β
+Gráfico 2: Escolaridad promedio de hombres y apoyo a Apruebo 2022
 
-Para el Plebiscito 2023:
+Descripción:
 
-logit(Pleb_2023(Y=1))=β0​+β1​(educación)+β2​(sexo)+β3​(edad)+β4​(tendencia)+β5(zona)+β
+Presenta una tendencia positiva clara, en la cual las comunas con mayor escolaridad promedio de hombres tienden a mostrar un mayor porcentaje de votos por el Apruebo. Además, se observa una dispersión moderada, por lo que el nivel de escolaridad influye, pero no explica por sí solo el resultado. En relación a los Outliers, existe una escolaridad promedio extremadamente alta, pero se presenta un apoyo al Apruebo muy bajo.
 
-Así buscamos saber como el nivel educacional en promedio tiene algún efecto significativo en la posibilidad de que una comuna haya votado "Apruebo" en el 2022 o "A Favor" en el 2023
+Gráfico 3: Escolaridad promedio de mujeres y apoyo al A favor 2023
+
+Descripción:
+
+Presenta una tendencia negativa, en la cual las comunas con mayor escolaridad promedio de mujeres tienden a mostrar un menor porcentaje de votos por la opción A favor. Además, se observa una dispersión moderada, por lo que la escolaridad influye, pero no explica por sí sola el resultado. En relación a los Outliers, existe una escolaridad promedio femenina extremadamente alta, pero se presenta un apoyo al A favor.
+
+Gráfico 4: Escolaridad promedio de hombres y apoyo al A favor 2023
+
+Descripción:
+
+Presenta una tendencia negativa leve, en la cual las comunas con mayor promedio de años de escolaridad de hombres tienden a mostrar un menor porcentaje de apoyo a la opción "A favor". Además, se observa una dispersión considerable, por lo que la escolaridad influye, pero no explica por sí sola el resultado electoral. En relación a los Outliers, existe una muy alta escolaridad promedio, pero a diferencia de la tendencia general, se presenta un apoyo extremadamente alto a la opción "A favor".
+
+Gráfico 5: Porcentaje de pobreza comunal y apoyo al Apruebo 2022
+
+Descripción:
+
+Presenta una tendencia negativa, en la cual las comunas con mayor porcentaje de pobreza tienden a mostrar un menor porcentaje de votos por el Apruebo. Además, se observa una dispersión moderada, por lo que el nivel de pobreza influye, pero no explica por sí solo el resultado. En relación a los Outliers, existe un porcentaje de pobreza casi nulo, pero se presenta un apoyo al Apruebo extremadamente bajo, rompiendo con el inicio de la línea de tendencia que sugería un apoyo mayor en sectores de menor pobreza.
+
+Gráfico 6: Porcentaje de pobreza comunal y apoyo al A favor 2023
+
+Descripción:
+
+Presenta una tendencia positiva, en la cual las comunas con mayor porcentaje de pobreza tienden a mostrar un mayor porcentaje de votos por la opción A favor. Además, se observa una dispersión moderada, por lo que el nivel de pobreza influye, pero no explica totalmente el resultado. En relación a los Outliers, existe un porcentaje de pobreza mínimo, pero se presenta un apoyo al "A favor" excepcionalmente alto, comportándose de manera opuesta a lo que la tendencia general predice para los sectores de baja pobreza.
+
+Gráfico 7: Porcentaje de mujeres comunal y apoyo A favor 2023
+
+Descripción:
+
+Presenta una tendencia levemente positiva, en la cual las comunas con mayor porcentaje de mujeres en su población tienden a mostrar un aumento en el porcentaje de votos por el A favor.  Además, se observa una alta dispersión, concentrada mayoritariamente en el centro del gráfico, por lo que la proporción demográfica de mujeres influye mínimamente y no explica por sí sola el resultado. En relación a los Outliers, ambos presentan un apoyo al A favor extremadamente alto, escapando significativamente de la media, independientemente de que su porcentaje de mujeres sea cercano al promedio.
+
+Gráfico 8: Porcentaje de hombres comunal y apoyo A favor 2023
+
+Descripción:
+
+Presenta una tendencia negativa muy leve, en la cual las comunas con mayor porcentaje de hombres tienden a mostrar una ligera disminución en el porcentaje de votos por el A favor. Además, se observa una alta concentración y dispersión de los datos en el centro, por lo que la composición demográfica por sexo influye mínimamente en el resultado. En relación a los Outliers, ambos presentan un apoyo al A favor extremadamente alto, escapando de la nube de dispersión principal, independientemente de su porcentaje de población masculina.
+
+Gráfico 9: Porcentaje de mujeres comunal y apoyo al Apruebo 2022
+
+Descripción:
+
+Presenta una tendencia levemente negativa, en la cual las comunas con mayor porcentaje de mujeres en su población tienden a mostrar una ligera disminución en el porcentaje de votos por el Apruebo. Además, se observa una alta concentración y dispersión, por lo que la variable demográfica tiene muy poca capacidad explicativa sobre el resultado electoral. En relación a los Outliers, que se ubica muy por debajo de la nube de puntos principal, presentando un apoyo al Apruebo extremadamente bajo, independientemente de su composición de género.
+
+Gráfico 10: Porcentaje de hombres comunal y apoyo al Apruebo 2022
+
+Descripción:
+
+Presenta una tendencia levemente positiva, en la cual las comunas con mayor porcentaje de hombres en su población tienden a mostrar un ligero aumento en el porcentaje de votos por el Apruebo. Además, se observa una alta concentración y dispersión de los datos, lo que sugiere que la proporción de hombres no es un factor determinante para explicar la variabilidad del resultado. En relación a los Outliers, a pesar de tener una proporción de hombres cercana al promedio, presenta un apoyo al Apruebo extremadamente bajo, situándose muy por debajo de la tendencia general.
+
+Gráfico 11: Distribución del apoyo al Apruebo 2022
+
+Descripción:
+
+Presenta una correlación, en la cual las comunas con alcaldes de Derecha tienden a concentrarse masivamente en un apoyo “Muy Bajo” al Apruebo, mientras que aquellas con alcaldes de Izquierda muestran una tendencia inversa, inclinándose hacia un apoyo “Alto”. Además, en el segmento de Independientes se observa una distribución homogénea (plana), por lo que la administración independiente no define una tendencia clara de voto. 
+Por otra parte, los extremos, destaca la fuerte polarización, ya que 51 municipios de derecha se ubicaron en el nivel de apoyo más bajo, contrastando fuertemente con los municipios de izquierda, que mayoritariamente se ubicaron en el cuartil de apoyo más alto.
+
+Gráfico 12: Distribución del apoyo al A favor 2023
+
+Descripción:
+
+Presenta una fuerte correlación política, en la cual las comunas con alcaldes de Derecha muestran una tendencia claramente ascendente, concentrándose masivamente en un apoyo “Alto” a la opción “A favor”. Por el contrario, los municipios con alcaldes de Izquierda e Independientes presentan una tendencia inversa, inclinándose mayoritariamente hacia un apoyo “Muy Bajo”. Además, se observa que el sector Independiente se alinea más con el comportamiento de la izquierda en este proceso. 
+
+Por otra parte, los extremos, destaca la gran brecha en el cuartil de apoyo "Alto", mientras la derecha ubica a 56 de sus municipios, la izquierda solo cuenta con 12 en ese nivel de respaldo.
+
+Gráfico 13: Votación del Apruebo y educación superior por comuna
+
+Descripción:
+
+Presenta una tendencia positiva clara, en la cual las comunas con mayor porcentaje de población con educación superior tienden a mostrar un mayor porcentaje de votos por el Apruebo. Además, se observa una dispersión moderada en el tramo medio, lo que sugiere una correlación importante entre el nivel educativo profesional y la preferencia por esta opción. En relación a los Outliers, existe un porcentaje de educación superior excepcionalmente alto, pero se presenta un apoyo al Apruebo extremadamente bajo, rompiendo drásticamente con la proyección de la línea de tendencia.
+
+Gráfico 14: Votación del A favor y educación superior por comuna
+
+Descripción:
+
+Presenta una tendencia negativa leve, en la cual las comunas con mayor porcentaje de población con educación superior tienden a mostrar una disminución en el porcentaje de votos por la opción A favor. Además, se observa una dispersión considerable en los tramos medios, por lo que el nivel educativo influye parcialmente, pero no explica por sí solo el resultado. En relación a los Outliers, existe un porcentaje de educación superior extremadamente alto, pero se presenta un apoyo al A favor muy elevado, rompiendo completamente con la tendencia decreciente que rige para el resto de las comunas.
+
